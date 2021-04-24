@@ -3,6 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+      },
+      backgroundImage: (theme) => ({
+        "contact-pattern":
+          "url(/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg)",
+        "home-hero-pattern":
+          "url(/assets/home/desktop/bg-pattern-hero-home.svg)",
+      }),
       colors: {
         primary: {
           peach: "#E7816B",
