@@ -14,8 +14,8 @@ export default function Layout({ children, title = "Designo" }: Props) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <div className="z-30 relative">{children}</div>
-      {/* <Footer /> */}
+      <div className="z-30 relative min-h-pageHeight mb-24">{children}</div>
+      <Footer />
     </div>
   );
 }

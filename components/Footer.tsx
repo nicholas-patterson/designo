@@ -3,9 +3,9 @@ import Contact from "./Contact";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 bg-primary-black pb-16 text-center">
+    <footer className="bg-primary-black py-16 text-center">
       <Contact />
-      <div className="flex flex-col justify-items-center items-center mt-72">
+      <div className="flex flex-col justify-items-center items-center -mt-24">
         <Image
           src="/assets/shared/desktop/logo-light.png"
           alt="site logo"
@@ -13,6 +13,8 @@ export default function Footer() {
           height={27}
           layout="fixed"
         />
+
+        <hr className="border-solid border-t-2 border-secondary-darkGrey w-4/5 mx-auto mt-12" />
 
         <nav className="my-10">
           <ul className="list-none text-primary-white uppercase tracking-wide">
